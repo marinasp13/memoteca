@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --azul-dark:#041832;
+    --azul-medio:#144480;
+    --azul-neon:#2BDEFD;
+    --cinza-dark:#444444;
+    --cinza-medio:#8F8F8F;
+    --cinza-claro:#EDF0F4;
+    --baby-blue:#DBE4EF;
+    --branco:#FFFFFF;
+    --fonte-principal: "Poppins", sans-serif;
+    --fonte-secundaria: "Roboto Mono", monospace;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../assets/background.png);
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    gap:2.5rem;
+    background-color: var(--azul-dark);
+    padding: 7rem 15rem 7rem 22.5rem;
+    
+}
+
+.header_texto{
+    display: flex;
+    flex-direction: column;
+    max-width: 36.75rem;
+    gap: 4.5rem;
+}
+
+#header_texto_logo{
+    width: 18.584rem;
+    height: 7rem;
+}
+
+#header_texto_titulo{
+    font-family: var(--fonte-principal);
+    font-size: 3.25rem;
+    font-weight: 300;
+    color: var(--baby-blue);
+}
+
+#header_texto_titulo strong{
+    font-weight: 800;
+}
+
+#header_banner{
+    width: 43.569rem;
+    height: 30rem;
+}
+
+main{
+    width:75rem;
+    align-self: center;
+    margin: 0 22.5rem 19.269rem 22.5rem;    
+}
+
+#form_adicionar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form_adicionar_titulo{
+    font-family: var(--fonte-principal);
+    font-size: 2.75rem;
+    font-weight: 600;
+    color: var(--azul-dark);
+    margin-bottom: 2rem;
+}
+
+#form_adicionar_btn, .form_adicionar_pensamento_botoes_btn{
+    background-color: var(--azul-dark);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    
+    font-family: var(--fonte-principal);
+    font-size: 1.375rem;
+    font-weight:600;
+    color: var(--baby-blue);
+    
+}
+
+#form_adicionar_btn:hover{
+    cursor: pointer;
+}
+
+#form_adicionar_pensamento{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    background-color: var(--branco);
+    width: 49.5rem;
+    padding: 3rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 20px 8px var(--cinza-claro);
+}
+
+#form_adicionar_pensamento label {
+    font-family: var(--fonte-principal);
+    font-size:1.375rem ;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#pensamento_descricao{
+    width: 100%;
+    height: 7rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--cinza-claro);
+    border-radius: 0.5rem;
+    border: none;
+}
+
+#pensamento_autor{
+    width: 100%;
+    height: 3.5rem;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    background-color: var(--cinza-claro);
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.form_adicionar_pensamento_botoes{
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem ;
+}
+
+#cancelar_btn{
+    background-color: var(--branco);
+    color: var(--azul-dark);
+}
+
+#form_adicionar::after{
+    content: "";
+    width: 11.25rem;
+    border: 1px solid var(--azul-dark);
+    display: block;
+    margin-top: 6rem;
+}
+
+#mural_pensamentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+#mural_pensamentos_titulo{
+    font-family: var(--fonte-principal);
+    font-size: 2.75rem;
+    font-weight: 600;
+    color: var(--azul-dark);
+    margin-bottom: 2rem;
+}
+
+#mural_pensamentos_lista_vazia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+#mural_pensamentos_lista_vazia_texto{
+    font-family: var(--fonte-principal);
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: var(--azul-dark);
+}
+
+#mural_pensamentos_lista_vazia_img{
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+#mural_pensamentos_lista{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.mural_pensamentos_lista_item{
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    gap: 1rem;
+    width: 24rem;
+    padding: 1rem;
+    box-shadow: 8px 8px var(--azul-dark);
+    color: var(--cinza-dark);
+}
+
+.mural_pensamentos_lista_item_aspas_img{
+    width: 3.961rem;
+    height: 3.16rem;
+
+}
+
+.mural_pensamentos_lista_item_descricao{
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.mural_pensamentos_lista_item_autor{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.mural_pensamentos_lista_item_botoes{
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.mural_pensamentos_lista_item_botoes_btn{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--azul-dark);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    color: var(--baby-blue);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+}
