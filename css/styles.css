@@ -18,8 +18,8 @@
     --fonte-secundaria: "Roboto Mono", monospace;
 }
 body{
-    width: 100vw;
-    height: 100vh;
+    
+    
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -31,16 +31,18 @@ body{
 header{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap:2.5rem;
     background-color: var(--azul-dark);
-    padding: 7rem 15rem 7rem 22.5rem;
+    /*padding: 7rem 15rem 7rem 22.5rem;*/
+    padding: 7rem 0;
     
 }
 
 .header_texto{
     display: flex;
     flex-direction: column;
-    max-width: 36.75rem;
+    width: 36.75rem;
     gap: 4.5rem;
 }
 
