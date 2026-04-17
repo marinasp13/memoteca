@@ -106,7 +106,7 @@ main{
 }
 
 #form_adicionar_pensamento{
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
